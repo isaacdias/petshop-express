@@ -1,9 +1,9 @@
 const moment = require('moment');
 const fs = require('fs');
 
-let bandoDados = fs.readFileSync('./pets.json');
+let bancoDados = fs.readFileSync('./bancoDados.json');
 
-bancoDados = JSON.parse(bandoDados);
+bancoDados = JSON.parse(bancoDados);
 
 const petshot = {
     atualizarBancoDeDados: () => {
@@ -13,18 +13,19 @@ const petshot = {
         });
     },
     listarPets: () => {
-    
-        const petsList = bancoDados.pets.forEach(pet => {
+
+        bancoDados.pets.forEach((pet) => {
             let {nome, idade, tipo, raca, vacinado, servicos} = pet
-            console.log(`${nome}, ${idade} ${anosDeIdade(pet)} , ${tipo}, raça ${raca}.`);
-                    
-            for (const servico of servicos) {
-                let {nome, data} = servico
-                console.log(`Serviço: ${nome} | Realizado em: ${data}`);
-            }
+    
+            console.log(`${nome}, ${idade} anos, ${tipo}, ${raca}`);
+        
+            servicos.forEach((servico) => {
+                console.log(`${servico.data} - ${servico.nome}`);
+            })
             vacinado ? console.log('Está vacinado!') : console.log('Não vacinado!');
             console.log('-----------------------------')
-        });
+    
+        })
     },
     vacinarPet: (pet) => {
 
@@ -51,6 +52,9 @@ const petshot = {
     },
     adicionarPet: (...novosPets) => {
         novosPets.forEach((novoPet) => {
+            if (!novoPet.servicos) {
+                novoPet.servicos = [];
+            }
             bancoDados.pets.push(novoPet);
         })
     
