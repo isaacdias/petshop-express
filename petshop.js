@@ -6,12 +6,6 @@ let bancoDados = fs.readFileSync('./bancoDados.json');
 bancoDados = JSON.parse(bancoDados);
 
 const petshop = {
-    atualizarBancoDeDados: () => {
-        jsonPet = JSON.stringify(bancoDados, null, 2);
-        fs.writeFileSync("pets.json", jsonPet , (err) => {
-            if (err) throw err;
-        });
-    },
     listarPets: () => {
 
         bancoDados.pets.forEach((pet) => {
