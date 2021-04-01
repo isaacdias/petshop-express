@@ -1,244 +1,128 @@
 {
-    "pets": [
-      {
-        "nome": "Marvin",
-        "tipo": "gato",
-        "idade": 7,
-        "raca": "não-definida",
-        "peso": 3,
-        "tutor": "Isaac",
-        "contato": "(81) 98765-4321",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Tosa",
-            "data": "26-03-2021"
-          },
-          {
-            "nome": "Banho",
-            "data": "26-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "26-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "29-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "29-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "Hulk",
-        "tipo": "cachorro",
-        "idade": 2,
-        "raca": "Doberman",
-        "peso": 3,
-        "tutor": "Carlos",
-        "contato": "(81) 98765-4321",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Aparar unhas",
-            "data": "26-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "30-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "Thor",
-        "tipo": "cachorro",
-        "idade": 5,
-        "raca": "Pastor Alemão",
-        "peso": 3,
-        "tutor": "Amanda",
-        "contato": "(81) 98765-4321",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Banho",
-            "data": "26-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "doug",
-        "tipo": "cachorro",
-        "idade": 1,
-        "raca": "pastor alemão",
-        "peso": 15,
-        "tutor": "marina",
-        "contato": "81 9876-1234",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Tosa",
-            "data": "26-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "26-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "Maike",
-        "tipo": "cachorro",
-        "idade": 2,
-        "raca": "pastor alemão",
-        "peso": 15,
-        "tutor": "marina",
-        "contato": "81 9876-1234",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Tosa",
-            "data": "26-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "mickey",
-        "tipo": "cachorro",
-        "idade": 3,
-        "raca": "pastor alemão",
-        "peso": 15,
-        "tutor": "marina",
-        "contato": "81 9876-1234",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Aparar unhas",
-            "data": "26-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "Sam",
-        "tipo": "gato",
-        "idade": 1,
-        "raca": "siamês",
-        "peso": 15,
-        "tutor": "marina",
-        "contato": "81 9876-1234",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Banho",
-            "data": "26-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "26-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "Bob",
-        "tipo": "cachorro",
-        "idade": 12,
-        "raca": "poodle",
-        "peso": 4,
-        "tutor": "Thalita",
-        "contato": "81 9876-1234",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Banho",
-            "data": "26-03-2021"
-          },
-          {
-            "nome": "Tosa",
-            "data": "26-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "26-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "29-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "29-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "Marley",
-        "tipo": "cachorro",
-        "idade": 4,
-        "raca": "vira-lata",
-        "peso": 3,
-        "tutor": "Gabriel",
-        "contato": "81 9876-1234",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Aparar unhas",
-            "data": "29-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "29-03-2021"
-          },
-          {
-            "nome": "Banho",
-            "data": "29-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "Banguela",
-        "tipo": "gato",
-        "idade": 4,
-        "raca": "vira-lata",
-        "peso": 2,
-        "tutor": "Carlos",
-        "contato": "81 9876-1234",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Aparar unhas",
-            "data": "29-03-2021"
-          },
-          {
-            "nome": "Banho",
-            "data": "29-03-2021"
-          },
-          {
-            "nome": "Tosa",
-            "data": "29-03-2021"
-          },
-          {
-            "nome": "Aparar unhas",
-            "data": "29-03-2021"
-          }
-        ]
-      },
-      {
-        "nome": "Eliot",
-        "tipo": "gato",
-        "idade": 4,
-        "raca": "vira-lata",
-        "peso": 2,
-        "tutor": "Ana",
-        "contato": "81 9876-1234",
-        "vacinado": true,
-        "servicos": [
-          {
-            "nome": "Banho",
-            "data": "29-03-2021"
-          }
-        ]
-      }
-    ]
-  }
+  "pets": [
+    {
+      "nome": "Costelinha",
+      "tipo": "cachorro",
+      "idade": 5,
+      "raca": "Vira-lata",
+      "peso": 3,
+      "tutor": "Doug",
+      "contato": "(11) 98899-4545",
+      "vacinado": true,
+      "servicos": [
+        {
+          "nome": "banho",
+          "data": "29-03-2021"
+        },
+        {
+          "nome": "banho",
+          "data": "29-03-2021"
+        }
+      ]
+    },
+    {
+      "nome": "Snoopy",
+      "tipo": "cachorro",
+      "idade": 13,
+      "raca": "Beagle",
+      "peso": 5,
+      "tutor": "Charlie Brown",
+      "contato": "(11) 95656-4545",
+      "vacinado": true,
+      "servicos": [
+        {
+          "nome": "banho",
+          "data": "29-03-2021"
+        }
+      ]
+    },
+    {
+      "nome": "Satanas",
+      "tipo": "gato",
+      "idade": 5,
+      "raca": "Vira-lata",
+      "peso": 3,
+      "tutor": "Bruxa do 71",
+      "contato": "(11) 97171-7171",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Ada",
+      "tipo": "cachorro",
+      "idade": 1,
+      "raca": "Vira-lata",
+      "peso": 18,
+      "tutor": "Pedro",
+      "contato": "(11) 98899-4545",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Pedrita",
+      "tipo": "cachorro",
+      "idade": 10,
+      "raca": "Pastor Alemão",
+      "peso": 18,
+      "tutor": "João",
+      "contato": "(11) 98899-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Romarinho",
+      "tipo": "cachorro",
+      "idade": 3,
+      "raca": "American",
+      "peso": 28,
+      "tutor": "Bruno",
+      "contato": "(11) 99999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Bidu",
+      "tipo": "gato",
+      "idade": 3,
+      "raca": "American",
+      "peso": 28,
+      "tutor": "Doug",
+      "contato": "(11) 99999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Eva",
+      "tipo": "gato",
+      "idade": 3,
+      "raca": "American",
+      "peso": 28,
+      "tutor": "Hendy",
+      "contato": "(11) 99999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Tag",
+      "tipo": "gato",
+      "idade": 3,
+      "raca": "American",
+      "peso": 28,
+      "tutor": "Doug",
+      "contato": "(11) 99999-9999",
+      "vacinado": true,
+      "servicos": []
+    },
+    {
+      "nome": "Garfield",
+      "tipo": "gato",
+      "idade": "4",
+      "raca": "vira-lata",
+      "peso": "2",
+      "tutor": "Ana",
+      "contato": "81 9876-1234",
+      "vacinado": "false",
+      "servicos": []
+    }
+  ]
+}

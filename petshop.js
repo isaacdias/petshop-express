@@ -6,20 +6,25 @@ let bancoDados = fs.readFileSync('./bancoDados.json');
 bancoDados = JSON.parse(bancoDados);
 
 const petshop = {
+    atualizarBancoDeDados: () => {
+        jsonPet = JSON.stringify(bancoDados, null, 2);
+        fs.writeFileSync("bancoDados.json", jsonPet , (err) => {
+            if (err) throw err;
+        });
+    },
     listarPets: () => {
+        let textoListaPets = "PETSHOP \n"
 
         bancoDados.pets.forEach((pet) => {
-            let {nome, idade, tipo, raca, vacinado, servicos} = pet
-    
-            console.log(`${nome}, ${idade} anos, ${tipo}, ${raca}`);
-        
+            let {nome, idade, tipo, raca, vacinado, servicos} = pet    
+            textoListaPets += (`${nome}, ${idade} anos, ${tipo}, ${raca} \n`);        
             servicos.forEach((servico) => {
-                console.log(`${servico.data} - ${servico.nome}`);
+                textoListaPets += (`${servico.data} - ${servico.nome} \n`);
             })
-            vacinado ? console.log('Está vacinado!') : console.log('Não vacinado!');
-            console.log('-----------------------------')
-    
+            vacinado ? textoListaPets += ('Está vacinado! \n') : textoListaPets += ('Não vacinado! \n');
+            textoListaPets += ('----------------------------- \n') 
         })
+        return textoListaPets;
     },
     vacinarPet: (pet) => {
 
@@ -51,8 +56,7 @@ const petshop = {
             }
             bancoDados.pets.push(novoPet);
         })
-    
-        atualizarBancoDeDados();
+        petshop.atualizarBancoDeDados();
         novosPets.forEach((pet) => {
             console.log(`${pet.nome} foi adicionado com sucesso!`);
         })
@@ -129,12 +133,6 @@ const petshop = {
         petsTutor.forEach((pet) => {
             console.log(`${contatoTutor(pet)}`)
         })
-    },
-    atualizarBancoDeDados: () => {
-        jsonPet = JSON.stringify(bancoDados, null, 2);
-        fs.writeFileSync("pets.json", jsonPet , (err) => {
-            if (err) throw err;
-        });
     },
     anosDeIdade: (pet) => {
         if(pet.idade <= 1) {
