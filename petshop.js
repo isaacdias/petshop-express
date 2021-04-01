@@ -5,7 +5,7 @@ let bancoDados = fs.readFileSync('./bancoDados.json');
 
 bancoDados = JSON.parse(bancoDados);
 
-const petshot = {
+const petshop = {
     atualizarBancoDeDados: () => {
         jsonPet = JSON.stringify(bancoDados, null, 2);
         fs.writeFileSync("pets.json", jsonPet , (err) => {
@@ -152,4 +152,4 @@ const petshot = {
 }
 
 
-module.exports = petshot;
+module.exports = petshop;
