@@ -96,7 +96,7 @@ const petshop = {
             return pet.nome == nomePet;
         });
     
-        return petEncontrado ? petEncontrado : `Nenhum pet encontrado com nome ${nomePet}`;
+        return petEncontrado ? petEncontrado : {'nome': 'Pet não encontrado'};
     },
     filtrarPet: (tipoPet) => {
         const tiposDePets = bancoDados.pets.filter(pet => pet.tipo == tipoPet)
